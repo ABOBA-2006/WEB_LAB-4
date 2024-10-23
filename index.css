@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'LocalComicSansMS'; /* Name your font family */
+  src: url('Comic Sans MS.ttf'); /* Locate the .ttf file within your directory*/
+}
+
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'LocalComicSansMS';
+	box-sizing: border-box;
+}
+
+
+.header{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height:15vh;
+	width: 100vw;
+	background: lightblue;
+	border: 1.5px solid #49aea5;
+	gap:50vw;
+}
+.header__logo{
+	height:12vh;
+	width:auto;
+	margin-left:20vw;
+}
+.header__menu{
+	height:6vh;
+	width:auto;
+}
+
+
+.content{
+	width: 100vw;
+	height: 65vh;
+}
+.content__title-text{
+	height: 15vh;
+	margin-left:20vw;
+	padding-top:5vh;
+}
+.content__title-text__name{
+	opacity: 50%;
+	font-size: 1.3vw;
+	font-weight: 1000;
+}
+.content__title-text__slogan{
+	font-weight: 1000;
+	font-size: 2vw;
+}
+
+.content__main-info{
+	height: 50vh;
+	width: 60vw;
+	margin-left: 20vw;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.small_block{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width:15vw;
+	height: 70%;
+	border-radius:1vw;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+	 						rgba(17, 17, 26, 0.1) 0px 8px 24px,
+	  					rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.small_photo{
+	margin-top: 2vh;
+	width: 40%;
+	border-radius: 10vw;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+	 						rgba(17, 17, 26, 0.1) 0px 8px 24px,
+	  					rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.small_text{
+	height: 35%;
+	margin-top: 2vh;
+	text-align: justify;
+	width: 70%;
+	font-size: 0.7vw;
+}
+.small_button{
+	transition: 1s;
+	margin-top: 2vh;
+	width: 30%;
+	border-radius: 1vw;
+	background: pink;
+	border-color: #d27694;
+}
+.small_button:hover{
+	width:35%;
+	background: lightblue;
+	transition: 1s;
+	border-color: #49aea5;
+}
+.small_button p{
+	font-size: 0.8vw;
+}
+
+.content__main-info__image{
+	width: 25vw;
+}
+
+.footer{
+	display: flex;
+	width: 100vw;
+	height: 20vh;
+	background: pink;
+	border: 1.5px solid #d27694;
+	align-items: center;
+	justify-content: center;
+}
+.footer__text{
+	font-size: 1vw;
+	text-align: center;
+}
